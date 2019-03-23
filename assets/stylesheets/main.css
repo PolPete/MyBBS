@@ -1,0 +1,194 @@
+/* Site Stylesheet
+	1. Custom Styles
+	2. Typography Styles
+	3. Module Styles
+	4. Component Styles
+	5. Page Styles
+
+	========================================
+	1. Custom styles
+	========================================
+*/
+
+body {
+	font-family: "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.w3-bar .w3-bar-item {
+	padding: 20px
+}
+
+/*
+	========================================
+	2. Typography Styles
+	========================================
+*/
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Oswald";
+}
+.logo {
+	font-family: 'Gloria Hallelujah', cursive, Helvetica, sans-serif;
+	color: #FFAA00;
+}
+small {
+	font-family: 'Roboto', Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 1.25;
+}
+/*
+	========================================
+	3. Module Styles
+	========================================
+*/
+
+/* Site Navigation */
+#top_nav {
+	background-color: #34474F;
+}
+#mobile_nav {
+	background-color: #293f50;
+}
+#top_nav a,
+#mobile_nav a {
+	color: #FFFFFF;
+	box-shadow:0 0 0 0 rgba(0,0,0,0.2),0 0 0 0 rgba(0,0,0,0.19)
+}
+#top_nav a:hover,
+#mobile_nav a:hover {
+	color: #648880;
+}
+#top_nav .logo,
+#mobile_nav .logo {
+	color: #FFAA00;
+	font-size: 23px;
+	line-height: 33px;
+}
+#mobile_nav {
+	margin-top:66px;
+}
+
+/* Site Header */
+header {
+	background: #34474F;
+	color: #FFFFFF;
+	margin-top: 81px;
+}
+h1, h2 {
+	color: #FFAA00;
+}
+h2 {
+	margin: 0;
+
+}
+header i {
+	color: #FFAA00;
+}
+/* Footer */
+footer {
+	background-color: #293f50;
+	color: #FFFFFF;
+}
+footer h3 {
+	color: #FFAA00;
+}
+
+/*
+	========================================
+	4. Component Styles
+	========================================
+*/
+button:focus {
+	outline: none;
+}
+.post-btn {
+	width: 30%;
+}
+@media(max-width: 720px) {
+	.post-btn {
+		width: 80%;
+	}
+}
+/*
+	========================================
+	5. Page Styles
+	========================================
+*/
+.container {
+	margin: 0 auto;
+	max-width: 1160px;
+	padding: 0 15px 20px;
+}
+.card {
+	background-color: #FFFFFF;
+	border-radius: 10px;
+	box-shadow: 0 0 40px 2px rgba(0, 0, 0, 0.1);
+	padding: 30px 30px 15px;
+}
+@media(max-width: 720px) {
+	.card .w3-padding-large {
+		padding: 12px 0!important;
+		margin: 16px 0!important;
+	}
+}
+.site-main-background {
+	background-color: #34474F;
+	bottom: 0;
+	display: block;
+	height: 600px;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: -1;
+}
+
+/* Form */
+.form-title {
+	font-weight: 700;
+}
+.important {
+	display: inline-block;
+	margin-right: 4px;
+	padding: 2px 5px;
+	color: #fff;
+	background-color: #C2051C;
+}
+input {
+	padding: 10px;
+	width: 100%;
+	font-size: 14px;
+	font-family: Lato;
+	border: 1px solid #aaaaaa;
+	border-radius: 0;
+	-webkit-appearance: none;
+	-webkit-border-radius: 0px;
+}
+input:-webkit-autofill {
+	-webkit-box-shadow: inset 0 0 0px 9999px white;
+}
+input:focus {
+	outline: none;
+}
+input.invalid {
+	background-color: #ffdddd;
+}
+textarea {
+	padding: 10px;
+	width: 100%;
+	font-size: 14px;
+	font-family: Lato;
+	border: 1px solid #aaaaaa;
+}
+textarea:focus {
+	outline: none;
+}
+textarea.invalid {
+	background-color: #ffdddd;
+}
+.error-box {
+	float: left;
+	width: 100%;
+	color: #C3051C;
+	font-weight: 700;
+	margin-top: 0;
+}
