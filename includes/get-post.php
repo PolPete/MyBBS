@@ -14,7 +14,8 @@
 
 				echo "<div>
 								<h6><span class='w3-opacity'>Posted: $post_date</span> | <span class='w3-text-orange'>By: $post_author<span><h6></div>
-							<p>$post_content</p>";
+							<p>$post_content</p>
+							<hr>";
 			}
 		}
 	}
