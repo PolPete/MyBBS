@@ -65,14 +65,30 @@
 							<!-- Blog entry -->
 							<div class="w3-container w3-white w3-margin w3-padding-large">
 								<div class="w3-justify">
-									<div>
-										<h3 class="w3-text-blue">TITLE HEADING</h3>
-										<h6><span class="w3-opacity">Posted: May 2, 2016.</span> | <span class="w3-text-orange">By: Admin</span></h6>
+									<!-- Single Post entry -->
+									<div class="post-wrapper">
+										<div>
+											<h3 class="w3-text-blue">TITLE HEADING</h3>
+											<h6><span class="w3-opacity">Posted: May 2, 2016.</span> | <span class="w3-text-orange">By: Admin</span></h6>
+										</div>
+										<div class="short-post">
+											<p><strong>Lorem Ipsum</strong> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+											<p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+											<p>Contrary to popular belief, <strong>Lorem Ipsum is not simply random text.</strong> It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.</p>
+											<p>Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+											<h4><strong>Why do we use it?</strong></h4>
+											<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+											<div class="w3-panel w3-leftbar w3-large ">
+												<p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+											</div>
+											<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+											<div class="gradientback"></div>
+										</div>
+										<p class="w3-text-blue">
+											<a href="#">[Read More]</a>
+										</p>
+									<!-- END SINGLE POST ENTRY -->
 									</div>
-									<p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-									<p class="w3-text-blue">
-										<a href="single-post.html">[Read More]</a>
-									</p>
 									<p class="w3-left">
 										<button class="w3-button w3-blue" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> いいね</b></button>
 									</p>
@@ -94,7 +110,7 @@
 							</div>
 							<hr>
 
-							<!-- POST BUTTON -->
+							<!-- Post Button -->
 							<div class="w3-center w3-margin">
 								<button class="w3-button w3-orange w3-text-white w3-hover-text-blue w3-round-xxlarge w3-large post-btn" onclick="document.getElementById('reply').style.display='block'">投稿する</button>
 							</div>
@@ -120,6 +136,7 @@
 					<a href="#" class="w3-button">4</a>
 					<a href="#" class="w3-button">&raquo;</a>
 				</div>
+			<!-- END PAGINATION -->
 			</div>
 
 		<!-- END w3-content -->
@@ -184,6 +201,7 @@
 				</div>
 
 			</div>
+		<!-- END FOOTER -->
 		</footer>
 
 		<script>
@@ -216,7 +234,7 @@
 		</script>
 		<!-- jQuery -->
 		<script src="assets/js/jquery.min.js"></script>
-
+		<script src="assets/js/master.js"></script>
 		<script src="assets/js/validation.js"></script>
 	</body>
 </html>
