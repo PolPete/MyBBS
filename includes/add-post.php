@@ -12,7 +12,7 @@
 
 		$post_query = "INSERT INTO posts (author, content, created_at, updated_at) VALUES ('$post_author', '$post_content', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP)";
 
-		$insert_post = mysqli_query($db, $post_query) or die( mysql_error());
+		$insert_post = mysqli_query($db, $post_query) or die( mysqli_error($db));
 
 		if ( $insert_post ) {
 			echo "<script>alert('新規投稿を保存しました。')</script>";
