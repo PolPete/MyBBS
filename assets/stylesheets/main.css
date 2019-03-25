@@ -151,7 +151,6 @@ button:focus {
 .long-post {
 	height: auto;
 }
-
 .short-post .gradientback{
 	position:absolute;
 	bottom:0px;
@@ -160,6 +159,13 @@ button:focus {
 	height:50px;
 	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, transparent),color-stop(1, white));
 }
+#sns_btn i {
+	color: #468cc8;
+}
+#sns_btn i:hover {
+	color: #1fb3f9;
+}
+
 /* Form */
 .form-title {
 	font-weight: 700;
