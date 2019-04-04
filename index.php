@@ -33,7 +33,7 @@ include("includes/get-post.php");
 				<a href="index.html" class="w3-bar-item w3-btn w3-padding-large logo">pinBoard</a>
 				<div class="w3-right">
 					<a href="about.html" class="w3-bar-item w3-btn w3-padding-large w3-hide-small">About</a>
-					<a href="register.html" class="w3-bar-item w3-btn w3-padding-large w3-hide-small">Sign in</a>
+					<a href="signup.html" class="w3-bar-item w3-btn w3-padding-large w3-hide-small">Sign in</a>
 					<a href="login.html" class="w3-bar-item w3-btn w3-padding-large w3-hide-small">Log in</a>
 					<a href="contact.html" class="w3-bar-item w3-btn w3-padding-large w3-hide-small">Contact</a>
 				</div>
@@ -44,7 +44,7 @@ include("includes/get-post.php");
 		<div id="mobile_nav" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium w3-top w3-padding-large">
 			<a href="about.html" class="w3-bar-item w3-btn w3-padding-large">About</a>
 			<a href="contact.html" class="w3-bar-item w3-btn w3-padding-large">Contact</a>
-			<a href="register.html" class="w3-bar-item w3-btn w3-padding-large">Sign in</a>
+			<a href="signup.html" class="w3-bar-item w3-btn w3-padding-large">Sign in</a>
 			<a href="login.html" class="w3-bar-item w3-btn w3-padding-large">Log in</a>
 		</div>
 

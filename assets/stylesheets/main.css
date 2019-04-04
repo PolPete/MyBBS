@@ -167,13 +167,52 @@ button:focus {
 }
 
 /* Form */
+.form-container {
+	margin: 80px auto 0 auto;
+	max-width: 860px;
+	padding: 0 15px 20px;
+}
+.form-card {
+	background-color: rgb(0,178,182);
+	border-radius: 10px;
+	box-shadow: 0 0 40px 2px rgba(0, 0, 0, 0.1);
+	padding: 0;
+}
+.card-left-container {
+	padding: 30px 30px 15px;
+	color: #FFFFFF;
+}
+.card-left-container h2 {
+	color: #FFFFFF;
+}
+.card-left-container .logo {
+	margin-top: 380px;
+}
+@media(max-width: 720px) {
+	.card-left-container .logo {
+		margin-top: 0;
+	}
+}
+.card-right-container {
+	border-radius: 0 10px 10px 0;
+	padding: 30px 40px;
+}
+@media(max-width: 720px) {
+	.card-right-container {
+		border-radius: 0 0 10px 10px;
+		padding: 12px;
+	}
+}
 .form-title {
-	font-weight: 700;
+	font-weight: 400;
+	font-size: 18px;
+	margin-top: 32px;
 }
 .important {
 	display: inline-block;
 	margin-right: 4px;
 	padding: 2px 5px;
+	font-size: 14px;
 	color: #fff;
 	background-color: #C2051C;
 }
@@ -182,7 +221,8 @@ input {
 	width: 100%;
 	font-size: 14px;
 	font-family: Lato;
-	border: 1px solid #aaaaaa;
+	border: 0;
+	border-bottom: 1px solid #aaaaaa;
 	border-radius: 0;
 	-webkit-appearance: none;
 	-webkit-border-radius: 0px;
@@ -215,4 +255,48 @@ textarea.invalid {
 	color: #C3051C;
 	font-weight: 700;
 	margin-top: 0;
+}
+.avatar-selector input {
+	margin:0;padding:0;
+	-webkit-appearance:none;
+		 -moz-appearance:none;
+					appearance:none;
+}
+[type=radio] {
+	position: absolute;
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+.avatar1 {
+	background-image:url("../images/thumbs/thumb01.jpg");
+}
+.avatar2 {
+	background-image:url("../images/thumbs/thumb02.jpg");
+}
+.avatar-selector input:active +.card-selector {
+	opacity: .9;
+}
+.avatar-selector input:checked +.card-selector {
+	-webkit-filter: none;
+		 -moz-filter: none;
+					filter: none;
+}
+.card-selector {
+	cursor:pointer;
+	background-size:contain;
+	background-repeat:no-repeat;
+	display:inline-block;
+	width:100px;height:70px;
+	-webkit-transition: all 100ms ease-in;
+		 -moz-transition: all 100ms ease-in;
+					transition: all 100ms ease-in;
+	-webkit-filter: brightness(1.8) grayscale(1) opacity(.7);
+		 -moz-filter: brightness(1.8) grayscale(1) opacity(.7);
+					filter: brightness(1.8) grayscale(1) opacity(.7);
+}
+.card-selector:hover {
+	-webkit-filter: brightness(1.2) grayscale(.5) opacity(.9);
+		 -moz-filter: brightness(1.2) grayscale(.5) opacity(.9);
+					filter: brightness(1.2) grayscale(.5) opacity(.9);
 }
