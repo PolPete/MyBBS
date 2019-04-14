@@ -1,52 +1,11 @@
-<!DOCTYPE html>
 <?php
 include("includes/get-post.php");
+include("templates/header.php")
 ?>
-<html lang="ja">
-
-	<head>
-		<title>MyBBS</title>
-		<!-- Meta -->
-		<meta charset="utf-8">
-		<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<!-- CSS -->
-		<link rel="stylesheet" type="text/css" href="https://www.w3schools.com/w3css/4/w3.css">
-		<link rel="stylesheet" type="text/css" href="assets/stylesheets/main.css">
-		<!-- Fonts -->
-		<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Open Sans" rel="stylesheet">
-		<link href="http://fonts.googleapis.com/css?family=Lato:100,300,400" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Roboto:400,700"  rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
-		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-	</head>
-
 	<body>
-
-		<!-- Navbar -->
-		<nav class="w3-top w3-padding-large" id="top_nav">
-			<div class="w3-bar">
-				<a class="w3-bar-item w3-bt w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="openNav()" title="Toggle Navigation Menu">
-					<i class="fa fa-bars"></i>
-				</a>
-				<a href="index.html" class="w3-bar-item w3-btn w3-padding-large logo">pinBoard</a>
-				<div class="w3-right">
-					<a href="about.html" class="w3-bar-item w3-btn w3-padding-large w3-hide-small">About</a>
-					<a href="signup.html" class="w3-bar-item w3-btn w3-padding-large w3-hide-small">Sign in</a>
-					<a href="login.html" class="w3-bar-item w3-btn w3-padding-large w3-hide-small">Log in</a>
-					<a href="contact.html" class="w3-bar-item w3-btn w3-padding-large w3-hide-small">Contact</a>
-				</div>
-			</div>
-		</nav>
-
-		<!-- Navbar on small screens -->
-		<div id="mobile_nav" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium w3-top w3-padding-large">
-			<a href="about.html" class="w3-bar-item w3-btn w3-padding-large">About</a>
-			<a href="contact.html" class="w3-bar-item w3-btn w3-padding-large">Contact</a>
-			<a href="signup.html" class="w3-bar-item w3-btn w3-padding-large">Sign in</a>
-			<a href="login.html" class="w3-bar-item w3-btn w3-padding-large">Log in</a>
-		</div>
+		<?php
+		include("templates/navigation.php");
+		?>
 
 		<div class="w3-content" style="max-width:1600px" id="back_gr">
 			<!-- Header -->
@@ -68,6 +27,7 @@ include("includes/get-post.php");
 							<!-- Blog entry -->
 							<div class="w3-container w3-white w3-margin w3-padding-large">
 								<div class="w3-justify">
+									<!-- Single Post entry -->
 									<?php getPosts(); ?>
 									<div>
 										<h3 class="w3-text-blue">TITLE HEADING</h3>
